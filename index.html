@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sample semantic HTML5 webpage with accessibility and SEO features.">
+  <meta name="keywords" content="HTML5, semantic, accessibility, SEO, webpage">
+  <meta name="author" content="Emmanuel Kateba">
+  <title>Sample Semantic HTML5 Page</title>
+</head>
+<body>
+  <!-- Accessibility: Skip link for screen readers -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Emmanuel Kateba</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about" title="Learn more about us">About</a></li>
+        <li><a href="#services" title="View our services">Services</a></li>
+        <li><a href="#contact" title="Get in touch with us">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        We are dedicated to creating accessible and SEO-friendly websites using the latest web standards. 
+        Our goal is to ensure that every visitor has a seamless experience.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <article>
+        <h3>Web Development</h3>
+        <p>
+          We build semantic, responsive, and user-friendly websites tailored to your business needs.
+        </p>
+      </article>
+      <article>
+        <h3>SEO Optimization</h3>
+        <p>
+          Our SEO strategies improve your website’s visibility on search engines, bringing more traffic to your site.
+        </p>
+      </article>
+      <article>
+        <h3>Accessibility Audits</h3>
+        <p>
+          We ensure your website is accessible to all users, including those using assistive technologies.
+        </p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form aria-label="Contact Form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required aria-required="true"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required aria-required="true"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required aria-required="true"></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h2>Latest News</h2>
+    <p>Check back regularly for updates on our projects and services.</p>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 Emmanuel Kateba. All rights reserved.</p>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="#privacy" title="Read our privacy policy">Privacy Policy</a></li>
+        <li><a href="#terms" title="View terms and conditions">Terms & Conditions</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
